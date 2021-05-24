@@ -51,7 +51,7 @@
   --header-menu-gradient-second-color: rgba(17, 17, 17, 0.65);
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --background-color: #111;
     --primary-foreground-color: #ccc;
@@ -77,4 +77,4 @@
     --header-menu-gradient-first-color: rgba(17, 17, 17, 0);
     --header-menu-gradient-second-color: rgba(17, 17, 17, 0.65);
   }
-}
+}*/

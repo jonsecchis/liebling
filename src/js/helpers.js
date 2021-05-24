@@ -8,9 +8,11 @@ export const isMobile = (width = '768px') => {
 }
 
 export const isDarkMode = () => {
-  const darkModeMatcher = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)')
+  /*const darkModeMatcher = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)')
 
-  return darkModeMatcher && darkModeMatcher.matches
+  return darkModeMatcher && darkModeMatcher.matches*/
+
+  return false
 }
 
 export const formatDate = (date) => {

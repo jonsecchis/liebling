@@ -43,7 +43,8 @@ $(() => {
   const $mainNav = $('.js-main-nav')
   const $mainNavLeft = $('.js-main-nav-left')
   const $newsletterElements = $('.js-newsletter')
-  const currentSavedTheme = localStorage.getItem('theme')
+  //const currentSavedTheme = localStorage.getItem('theme')
+  const currentSavedTheme = "light"
 
   let fuse = null
   let submenuIsOpen = false
@@ -244,8 +245,10 @@ $(() => {
 
   $toggleDarkMode.on('change', () => {
     if ($toggleDarkMode.is(':checked')) {
-      $('html').attr('data-theme', 'dark')
-      localStorage.setItem('theme', 'dark')
+      /*$('html').attr('data-theme', 'dark')
+      localStorage.setItem('theme', 'dark')*/
+      $('html').attr('data-theme', 'light')
+      localStorage.setItem('theme', 'light')
     } else {
       $('html').attr('data-theme', 'light')
       localStorage.setItem('theme', 'light')

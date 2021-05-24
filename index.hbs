@@ -26,12 +26,14 @@ into the {body} of the default.hbs template --}}
 <main class="main-wrap">
   {{!-- Inject styles of the hero image to make it responsive --}}
   {{> hero background=@site.cover_image}}
-  <div class="m-hero__content" data-aos="fade-down">
-    <h1 class="m-hero-title bigger">{{@site.title}}</h1>
-    {{#if @site.description}}
-      <p class="m-hero-description bigger">{{@site.description}}</p>
-    {{/if}}
-    <a href="{{@site.url}}/newsletter" class="m-button filled js-newsletter">{{t "Subscribe"}}</a>
+  <div class="l-wrapper">
+    <div class="m-hero__content" data-aos="fade-down">
+      <h1 class="m-hero-title bigger">{{@site.description}}</h1>
+      {{!--{{#if @site.description}}
+        <p class="m-hero-description bigger">{{@site.description}}</p>
+      {{/if}}--}}
+      <a href="https://apexpartners.us4.list-manage.com/subscribe?u=b9e7dc7c5ec93fc63ec753a81&id=9e4ea93154" target="_blank" class="m-button filled js-newsletter">{{t "Subscribe"}}</a>
+    </div>
   </div>
   </section>
   <div class="l-content">
@@ -51,7 +53,7 @@ into the {body} of the default.hbs template --}}
                               #featured-bg-{{id}} {
                                 background-image: url({{img_url feature_image size='l'}});
                               }
-                            
+
                               @media(max-width: 768px) {
                                 #featured-bg-{{id}} {
                                   background-image: url({{img_url feature_image size='m'}});
@@ -61,7 +63,7 @@ into the {body} of the default.hbs template --}}
                             <div id="featured-bg-{{id}}"></div>
                           {{/if}}
                         </div>
-                        <div class="m-featured-article__meta">
+                        {{!-- <div class="m-featured-article__meta">
                           <a href="{{primary_author.url}}" class="m-featured-article__author js-tooltip" aria-label="{{primary_author.name}}" data-tippy-content="{{t "Posted by"}} {{primary_author.name}} {{authors autolink="false" from="2" prefix=(t "Among with") separator=" , "}}">
                             {{#if primary_author.profile_image}}
                               <div style="background-image: url({{img_url primary_author.profile_image size="xs"}});"></div>
@@ -72,7 +74,7 @@ into the {body} of the default.hbs template --}}
                           {{#if primary_tag}}
                             <a href="{{primary_tag.url}}" class="m-featured-article__tag">{{primary_tag.name}}</a>
                           {{/if}}
-                        </div>
+                        </div> --}}
                         <div class="m-featured-article__ribbon">
                           <span class="icon-star"></span>
                           <span>{{t "Featured"}}</span>

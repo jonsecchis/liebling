@@ -28,7 +28,7 @@ into the {body} of the default.hbs template --}}
     {{> hero background=feature_image}}
     </section>
   {{/post}}
-  
+
   <article>
     <div class="l-content in-post">
       {{!-- Everything inside the #post tags pulls data from the post --}}
@@ -84,7 +84,7 @@ into the {body} of the default.hbs template --}}
           </div>
         </div>
         {{!-- Email subscribe form at the bottom of the page --}}
-        <section class="m-subscribe-section js-newsletter">
+        {{!-- <section class="m-subscribe-section js-newsletter">
           <div class="l-wrapper in-post">
             <div class="m-subscribe-section__content">
               <div class="m-subscribe-section__text">
@@ -98,8 +98,8 @@ into the {body} of the default.hbs template --}}
               </div>
             </div>
           </div>
-        </section>
-        <section class="m-author">
+        </section> --}}
+        {{!-- <section class="m-author">
           <div class="m-author__content">
             <div class="m-author__picture">
               <a href="{{primary_author.url}}" class="m-author-picture" aria-label="{{primary_author.name}}">
@@ -147,7 +147,7 @@ into the {body} of the default.hbs template --}}
               </ul>
             </div>
           </div>
-        </section>
+        </section> --}}
         {{!-- If you want to embed comments, this is a good place to do it! --}}
         {{!--
           <section class="m-comments">
